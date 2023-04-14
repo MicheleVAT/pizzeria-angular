@@ -1,18 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    background-color: #ead9c2;
+}
+
 h1 {
     font-weight: bolder;
     font-size: larger;
 }
 
+#nome-pizza{
+    text-align: center;
+}
+
 #error-message{
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: large;
     font-weight: bold;
 }
 
-.centered{
+.centered, .horizontal1, .horizontal2{
     text-align: center;
-    background-color: beige;
+    background-color: #dbbb8f;
+}
+
+.bottom{
+    text-align: center;
+    padding-top: 20%;
+}
+
+.centered-bottom{
+    float:bottom;
+    background-color: red;
 }
 
 button, input[type=submit]{
@@ -49,4 +67,11 @@ td{
 
 li{
     text-align: left;
+}
+
+.horizontal{
+    float:left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 49%;
 }

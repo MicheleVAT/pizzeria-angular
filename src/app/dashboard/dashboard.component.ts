@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,14 +10,18 @@ export class DashboardComponent {
   
   pizze:string[];
   
-  constructor(){
+  constructor(private router: Router){
+    this.router = router;
     this.pizze = [];
     //TODO query a rest API
     for (var i=0; i < 10; i++)
       this.pizze.push("ProvaPizza" + i.toString());
   }
 
-  nuovaPizza(){}
+  nuovaPizza(){
+    this.router.navigateByUrl('/pizza-editor');
+  }
+
   eliminaPizza(){}
   aggiornaPizza(){}
 }

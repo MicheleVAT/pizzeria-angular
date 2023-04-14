@@ -1,0 +1,32 @@
+<div class="centered">
+   <h1>Editor Pizza</h1> 
+   <div class="centered">
+      <!--
+      <form>
+         <input *ngFor="let ing_idx of ingredienti.keys()" type="checkbox" id="checkbox{{ing_idx}}" name="checkbox{{ing_idx}}" value="CSS"/>
+         <label *ngFor="let ing_idx of ingredienti.keys()" for="checkbox{{ing_idx}}">{{ingredienti.get(ing_idx)}}</label>
+      </form>
+   -->
+      <form #pizzasubmit = "ngForm" (ngSubmit) = "onClickSubmit(pizzasubmit.value)">
+      <div class="horizontal">
+         <h1>Impasti</h1>
+            <div *ngFor="let ing_idx of ingredienti.keys()">
+               <input type="checkbox" id="checkbox{{ing_idx}}" name="checkbox{{ing_idx}}"/>
+               <label for="checkbox{{ing_idx}}">{{ingredienti.get(ing_idx)}}</label>
+            </div>
+      </div>
+      <div class="horizontal">
+         <h1>Impasti</h1>
+            <div *ngFor="let imp_idx of impasti.keys()">
+               <input type="radio" id="radio{{imp_idx}}" name="radio-impasto"/>
+               <label for="radio{{imp_idx}}">{{impasti.get(imp_idx)}}</label>
+            </div>
+      </div>
+      <div class="bottom">
+         <input type="text" id="nome-pizza" name="nome-pizza"/>
+         <label for="nome-pizza">Nome Pizza</label>
+         <input type="submit" value="submit">
+      </div>
+      </form>
+   </div>
+</div>

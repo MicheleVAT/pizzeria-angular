@@ -17,6 +17,7 @@ export class LoginComponent {
     var data2 = data;
     var em = document.getElementById('error-message');
     //TODO verifica login con api
+
     if (em)
       em.textContent = "HELLO";
 
