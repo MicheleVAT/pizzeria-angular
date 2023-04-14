@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+h1 {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#error-message{
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+
+.centered{
+    text-align: center;
+    background-color: beige;
+}
+
+button, input[type=submit]{
+    background-color: red;
+    border: solid black 1px;
+    padding:5%;
+}
+
+button:hover, input[type=submit]:hover{
+    background-color: gray;
+    border: red;
+    padding:5%;
+}
+
+.button2{
+    padding: 1%;
+}
+
+.button2:hover{
+    padding: 1%;
+}
+
+table, th, td{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+
+td{
+    padding: 2%;
+}
+
+li{
+    text-align: left;
+}

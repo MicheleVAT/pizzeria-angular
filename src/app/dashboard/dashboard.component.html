@@ -1,0 +1,33 @@
+<div class="centered">
+    <h1>Pizze</h1>
+    <br>
+    <br>
+    <button class="button2" (click)="nuovaPizza()"> Nuova Pizza </button>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Impasto</th>
+            <th>Ingredienti</th>
+            <th>Comandi</th>
+        </tr>
+        <tr *ngFor="let pizza of pizze">
+            <td>{{pizza}}</td>
+            <td>_impasto_</td>
+            <td>
+                <ul>
+                    <li>ing1</li>
+                    <li>ing2</li>
+                    <li>ing3</li>
+                </ul>
+            </td>
+            <td>
+                <button (click)="eliminaPizza()">Elimina</button>
+                <br>
+                <br>
+                <button (click)="aggiornaPizza()">Aggiorna</button>
+            </td>
+        </tr>
+    </table>
+</div>
